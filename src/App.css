@@ -1,0 +1,11 @@
+/* @import '~antd/dist/antd.css'; */
+
+.box {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
