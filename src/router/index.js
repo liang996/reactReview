@@ -13,8 +13,9 @@ import SetState from "../pages/Hooks/setStateDemo";
 import UseRef from "../pages/Hooks/useRef";
 import UseContextDemo from "../pages/Hooks/useContextDemo";
 import UseReducerDemo from "../pages/Hooks/useReducerDemo"; //useReducer基础版
-import UseReducerDemo1 from "../pages/Hooks/useReducerDemo1"; //useReducer基础版
-import UseReducerDemo2 from "../pages/Hooks/useReducerDemo2"; //useReducer基础版
+import UseReducerDemo1 from "../pages/Hooks/useReducerDemo1"; //useReducer案例1
+import UseReducerDemo2 from "../pages/Hooks/useReducerDemo2"; //useReducer案例2
+import useMemoDemo from "../pages/Hooks/useMemo"; //useMemo使用
 
 import ContextDemo from "../pages/Context";
 
@@ -113,6 +114,10 @@ export const routes = [
       {
         path: "/hooks/useReducerDemo2",
         component: UseReducerDemo2,
+      },
+      {
+        path: "/hooks/useMemo",
+        component: useMemoDemo,
       },
     ],
   },

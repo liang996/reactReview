@@ -72,6 +72,14 @@ class Hooks extends Component {
               useReducerDemo-案例2
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              activeClassName="fontBg"
+              to={`${this.props.match.url}/useMemo`}
+            >
+              useMemo-案例
+            </NavLink>
+          </li>
           <hr />
           {this.props.routes &&
             this.props.routes.map((item, index) => (
