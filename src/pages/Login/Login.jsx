@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Button, message } from "antd";
+import { nanoid } from "nanoid";
 
 import "./Login.css";
 
@@ -18,7 +19,7 @@ export default class Login extends Component {
   isLogin = () => {
     const { userName, password } = this.state;
 
-    let user = JSON.parse(localStorage.getItem("usererror")) || {};
+    let user = JSON.parse(localStorage.getItem("userData")) || {};
     //判断输入内容是否为空
     if (userName.trim() === "" || password.trim() === "") {
       message.error("输入内容不能为空");
@@ -43,11 +44,11 @@ export default class Login extends Component {
       //   query: { userName, password },
       // });
 
-      let obj = {
+      let tokenObj = {
         auth: false,
-        token: "admin12345678",
+        token:nanoid(),
       };
-      localStorage.setItem("obj", JSON.stringify(obj));
+      localStorage.setItem("tokenObj",JSON.stringify(tokenObj));
 
       //传递state参数
       this.props.history.push({

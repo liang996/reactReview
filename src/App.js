@@ -3,8 +3,8 @@
 // import Login from './pages/Login/Login';
 import {routes} from "./router/index";
 import {RouterView} from "./router/routerView";
-import { BrowserRouter  as Router  } from "react-router-dom";
-// import { HashRouter as Router  } from "react-router-dom";
+// import { BrowserRouter  as Router  } from "react-router-dom";
+import { HashRouter as Router  } from "react-router-dom";
 
 
 import "./App.css";

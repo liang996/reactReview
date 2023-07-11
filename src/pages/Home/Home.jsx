@@ -25,7 +25,7 @@ class Home extends Component {
     });
   };
   render() {
-    let user = JSON.parse(localStorage.getItem("obj")) || {};
+    let user = JSON.parse(localStorage.getItem("tokenObj")) || {};
     // 获取token
     const isLogin = user?.token ? true : false;
     if (!isLogin) {

@@ -27,7 +27,7 @@ export default class register extends Component {
         password,
       };
 
-      localStorage.setItem("usererror", JSON.stringify(data));
+      localStorage.setItem("userData", JSON.stringify(data));
       message.success('注册成功，去登录');
 
       this.props.history.push("/login");

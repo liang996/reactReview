@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 
 export const RouterView = function (props) {
@@ -8,18 +8,22 @@ export const RouterView = function (props) {
       {props.routes &&
         props.routes.map((item, index) => (
           <Route
-          exact={item.exact}
-          replace
+            exact={item.exact}
+            replace
             key={index}
             // path={item.path}
             path={item.path}
             // component={item.component}
-      
             render={(props) => (
               <item.component {...props} routes={item.childrens} />
             )}
+            // render={(props) => (
+            //   localStorage.getItem("tokenObj")?
+            //   <item.component {...props} routes={item.childrens} />:<Redirect to="/login"></Redirect>
+            // )}
           />
         ))}
+      <Route />
       {/* 路由没有匹配到走404页面 */}
       <Route component={ErrorPage} />
     </Switch>
