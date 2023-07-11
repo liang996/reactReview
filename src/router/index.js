@@ -16,6 +16,8 @@ import UseReducerDemo from "../pages/Hooks/useReducerDemo"; //useReducer基础�
 import UseReducerDemo1 from "../pages/Hooks/useReducerDemo1"; //useReducer案例1
 import UseReducerDemo2 from "../pages/Hooks/useReducerDemo2"; //useReducer案例2
 import useMemoDemo from "../pages/Hooks/useMemo"; //useMemo使用
+import CustomHook from "../pages/Hooks/customHook"; //自定义Hook使用
+import UseCallback from "../pages/Hooks/useCallback"; //useCallback使用
 
 import ContextDemo from "../pages/Context";
 
@@ -118,6 +120,14 @@ export const routes = [
       {
         path: "/hooks/useMemo",
         component: useMemoDemo,
+      },
+      {
+        path: "/hooks/customHook",
+        component: CustomHook,
+      },
+      {
+        path: "/hooks/useCallback",
+        component: UseCallback,
       },
     ],
   },

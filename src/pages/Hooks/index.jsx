@@ -80,6 +80,22 @@ class Hooks extends Component {
               useMemo-案例
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              activeClassName="fontBg"
+              to={`${this.props.match.url}/useCallback`}
+            >
+              useCallback-案例
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              activeClassName="fontBg"
+              to={`${this.props.match.url}/customHook`}
+            >
+              自定义Hook-案例
+            </NavLink>
+          </li>
           <hr />
           {this.props.routes &&
             this.props.routes.map((item, index) => (
