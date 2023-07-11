@@ -53,7 +53,23 @@ class Hooks extends Component {
               activeClassName="fontBg"
               to={`${this.props.match.url}/useReducerDemo`}
             >
-              useReducerDemo
+              useReducerDemo-基本版
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              activeClassName="fontBg"
+              to={`${this.props.match.url}/useReducerDemo1`}
+            >
+              useReducerDemo-案例1
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              activeClassName="fontBg"
+              to={`${this.props.match.url}/useReducerDemo2`}
+            >
+              useReducerDemo-案例2
             </NavLink>
           </li>
           <hr />

@@ -12,7 +12,9 @@ import UseEffect from "../pages/Hooks/useEffect";
 import SetState from "../pages/Hooks/setStateDemo";
 import UseRef from "../pages/Hooks/useRef";
 import UseContextDemo from "../pages/Hooks/useContextDemo";
-import UseReducerDemo from "../pages/Hooks/useReducerDemo";
+import UseReducerDemo from "../pages/Hooks/useReducerDemo"; //useReducer基础版
+import UseReducerDemo1 from "../pages/Hooks/useReducerDemo1"; //useReducer基础版
+import UseReducerDemo2 from "../pages/Hooks/useReducerDemo2"; //useReducer基础版
 
 import ContextDemo from "../pages/Context";
 
@@ -103,6 +105,14 @@ export const routes = [
       {
         path: "/hooks/useReducerDemo",
         component: UseReducerDemo,
+      },
+      {
+        path: "/hooks/useReducerDemo1",
+        component: UseReducerDemo1,
+      },
+      {
+        path: "/hooks/useReducerDemo2",
+        component: UseReducerDemo2,
       },
     ],
   },

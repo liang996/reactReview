@@ -1,0 +1,17 @@
+.box {
+  width: 300px;
+  background: #a6dc1e;
+  padding: 10px;
+}
+.box .son2 {
+  width: 100%;
+  padding: 10px;
+
+  background: #0cafdc;
+}
+.box  .son1 {
+  width: 100%;
+  padding: 10px;
+
+  background: #7636ed;
+}
