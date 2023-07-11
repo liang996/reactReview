@@ -86,6 +86,11 @@ class Home extends Component {
             </NavLink>
           </li>
           <li>
+            <NavLink activeClassName="fontBg" to="/context">
+              context
+            </NavLink>
+          </li>
+          <li>
             <Button onClick={this.isMy} type="text">
               我的
             </Button>

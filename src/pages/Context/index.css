@@ -1,0 +1,18 @@
+.box {
+  width: 300px;
+  height: 300px;
+  background: #a6dc1e;
+  padding: 10px;
+}
+.son {
+  width: 100%;
+  padding: 10px;
+
+  background: #0cafdc;
+}
+.son1 {
+  width: 100%;
+  padding: 10px;
+
+  background: #7636ed;
+}

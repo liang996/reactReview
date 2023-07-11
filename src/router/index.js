@@ -11,6 +11,7 @@ import UseState from "../pages/Hooks/useState";
 import UseEffect from "../pages/Hooks/useEffect";
 import SetState from "../pages/Hooks/setStateDemo";
 import UseRef from "../pages/Hooks/useRef";
+import ContextDemo from "../pages/Context";
 
 import My from "../pages/My/My";
 import Home from "../pages/Home/Home";
@@ -113,5 +114,9 @@ export const routes = [
   {
     path: "/register",
     component: Register,
+  },
+  {
+    path: "/context",
+    component: ContextDemo,
   },
 ];
