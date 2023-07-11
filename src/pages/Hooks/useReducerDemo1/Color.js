@@ -5,7 +5,7 @@ const { Provider } = Mycontext;
 export const Color = (props)=> {
   return (
     <>
-      <Provider value={{ color: "red" }}>{props.childen}</Provider>
+      <Provider value={{ color: "red" }}>{props.children}</Provider>
     </>
   );
 }

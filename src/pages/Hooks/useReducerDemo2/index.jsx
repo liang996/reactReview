@@ -1,36 +1,55 @@
-import React, { useReducer} from "react";
-import { createAddType, createDelType } from "./constant";
+import React, { useContext } from "react";
+import "./index.css";
+import { Color, Mycontext } from "./Color";
+import { UpdateColorType } from "./constant";
 
-export default function Demo() {
-  const [count, dispatch] = useReducer((prestate = 0, action) => {
-    const { type, data } = action;
-    switch (type) {
-      case createAddType:
-        return prestate + data;
-      case createDelType:
-        return prestate - data;
-      default:
-        return prestate;
-    }
-  }, 0);
-
+function A() {
+  const { dispatch } = useContext(Mycontext);
+  console.log("color22222", dispatch);
+  // 获取color
+  const { color } = useContext(Mycontext);
   return (
     <div>
-      count初始值为：{count} <br />
-      <button
-        onClick={() => {
-          dispatch({ type: createAddType, data: 1 });
-        }}
-      >
-        点击加1
-      </button>
-      <button
-        onClick={() => {
-          dispatch({ type: createDelType, data: 1 });
-        }}
-      >
-        点击-1
-      </button>
+      <div style={{ color: color }}>字体颜色为{color}</div>
     </div>
   );
 }
+
+function B() {
+  const { dispatch } = useContext(Mycontext);
+  console.log("color111", dispatch);
+  return (
+    <>
+      <button
+        className="son22"
+        onClick={() => {
+          dispatch({ type: UpdateColorType, color: "hotpink" });
+        }}
+      >
+        点击文字变粉红
+      </button>
+      <button
+        className="son11"
+        onClick={() => {
+          dispatch({ type: UpdateColorType, color: "yellow" });
+        }}
+      >
+        点击文字变黄色
+      </button>
+    </>
+  );
+}
+function AB() {
+  return (
+    <div className="box">
+      颜色案例
+      <Color>
+        <A /> 
+        <br/>
+        <B />
+      </Color>
+    </div>
+  );
+}
+
+export default AB;

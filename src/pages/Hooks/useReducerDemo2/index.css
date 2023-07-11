@@ -2,14 +2,19 @@
   width: 300px;
   height: 300px;
   padding: 10px;
+  border-color: bisque;
 }
-.son2 {
+.son22 {
   width: 100%;
   padding: 10px;
+  border-color: rgb(237, 85, 62);
+
 
 }
-  .son1 {
+  .son11 {
   width: 100%;
   padding: 10px;
+  border-color: rgb(59, 8, 39);
+
 
 }
