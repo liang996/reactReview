@@ -40,6 +40,22 @@ class Hooks extends Component {
               useRef
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              activeClassName="fontBg"
+              to={`${this.props.match.url}/useContext`}
+            >
+              useContext
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              activeClassName="fontBg"
+              to={`${this.props.match.url}/useReducerDemo`}
+            >
+              useReducerDemo
+            </NavLink>
+          </li>
           <hr />
           {this.props.routes &&
             this.props.routes.map((item, index) => (

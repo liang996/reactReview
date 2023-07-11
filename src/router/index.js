@@ -11,6 +11,9 @@ import UseState from "../pages/Hooks/useState";
 import UseEffect from "../pages/Hooks/useEffect";
 import SetState from "../pages/Hooks/setStateDemo";
 import UseRef from "../pages/Hooks/useRef";
+import UseContextDemo from "../pages/Hooks/useContextDemo";
+import UseReducerDemo from "../pages/Hooks/useReducerDemo";
+
 import ContextDemo from "../pages/Context";
 
 import My from "../pages/My/My";
@@ -92,6 +95,14 @@ export const routes = [
       {
         path: "/hooks/useRef",
         component: UseRef,
+      },
+      {
+        path: "/hooks/useContext",
+        component: UseContextDemo,
+      },
+      {
+        path: "/hooks/useReducerDemo",
+        component: UseReducerDemo,
       },
     ],
   },
